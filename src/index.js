@@ -7,11 +7,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Badge from './components/Badge';
+import BadgeNew from './pages/BadgesNew';
+import Badges from './pages/Badges';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './global.css';
 
 const container = document.getElementById('app');
 
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(<Badges/>, container);
