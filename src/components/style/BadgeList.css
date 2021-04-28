@@ -1,0 +1,7 @@
+.BadgeList__container{
+    border: 1px solid red;
+    background-color: white;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
