@@ -8,11 +8,12 @@ class BadgesList extends React.Component {
             {this.props.badge.map(badge => {
                 return(
                     <li className='BadgeList__container' key={badge.id}>
-                        <img src={badge.avatarUrl} alt="avtar"></img>
-                        <p>{badge.firstName} {badge.lastName}</p>
-                        <p>{badge.twitter}</p>
-                        <p>{badge.jobTitle}</p>
-
+                        <img className='BadgeList-image' src={badge.avatarUrl} alt="avtar"></img>
+                        <div className="">
+                           <strong><p>{badge.firstName} {badge.lastName}</p></strong>
+                            <p>@{badge.twitter}</p>
+                            <p>{badge.jobTitle}</p>
+                        </div>
                     </li>
                 )
             })}

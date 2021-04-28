@@ -1,7 +1,15 @@
 .BadgeList__container{
-    border: 1px solid red;
     background-color: white;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin: 10px;
+}
+.BadgeList-image{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+.BadgeList__container-p{
+   
 }
