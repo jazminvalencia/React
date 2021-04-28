@@ -9,9 +9,9 @@ class BadgesList extends React.Component {
                 return(
                     <li className='BadgeList__container' key={badge.id}>
                         <img className='BadgeList-image' src={badge.avatarUrl} alt="avtar"></img>
-                        <div className="">
+                        <div>
                            <strong><p>{badge.firstName} {badge.lastName}</p></strong>
-                            <p>@{badge.twitter}</p>
+                            <p  className="twitter-text">@{badge.twitter}</p>
                             <p>{badge.jobTitle}</p>
                         </div>
                     </li>

@@ -2,3 +2,25 @@ Componentes --> es una clase o bien, lo que forma la pagina web barra de busqued
 elemento --> un objeto
 
 prop --> property
+React Router: libreria open source que nos ayuda a crear aplicaciones single page apps 
+
+multi page apps: internet de la vieja escuela, cada vez que le dabas click a un botton la pagina cambiaba por completo
+y habia que esperar que nos llegaron todos los datos de la peticion de esa pagina y luego se presenta
+
+Single Page Apps: tecnica moderna donde no tienes que pedir todos los datos, solo se piden los datos necesarios para esa pagina,
+evitando renderizar toda la pagina.
+
+React Router (v4): nos da las herramientas para hacer SPA facilmente: 
+usaremos 4 componentes: BrowserRouter, router, switch, link.
+permite que esta aplicacion se vuelva de una sola pagina Single page App
+
+BrowserRouter: componente que tenemos que poner en lo mas arriba de la app, permite que los demas componentes de la app 
+funcionen.
+
+Route: representa una direccion de internet contienen un path:(donde se renderiza el componente), component(que componente se va a renderizar)
+
+Switch: es un componente que nos va a servir para presentar solo una ruta de varias que se pueden agregar dentro del componente
+
+Link: evita que recargue la pagina completa, toma el lugar del elemento <a>
+
+
