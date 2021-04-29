@@ -1,0 +1,4 @@
+Componentes --> es una clase o bien, lo que forma la pagina web barra de busqueda, encabezados, footer, header
+elemento --> un objeto
+
+prop --> property

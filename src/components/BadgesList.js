@@ -25,7 +25,7 @@ class BadgesList extends React.Component {
             {this.props.badge.map(badge => {
                 return(
                     <li className='BadgeList__container' key={badge.id}>
-                        <Link className='BadgeList__container-link text-reset text-decoration-none' to={`bages/${badge.id}/edit`}>
+                        <Link className='BadgeList__container-link text-reset text-decoration-none' to={`bages/${badge.id}`}>
                             <Gravatar className='BadgeList-image' email={badge.email} alt="avtar"></Gravatar>
                             <div>
                             <strong><p>{badge.firstName} {badge.lastName}</p></strong>
