@@ -1,0 +1,21 @@
+.Nofound-back{
+    height: 93.8vh;
+    padding: 2rem 0;
+    background: url(http://localhost:3000/static/media/stars.1d17360a.svg), #232323;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img-fluid{
+    display: flex;
+    margin: auto;
+}
+
+.title-noFount{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
