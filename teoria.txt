@@ -23,4 +23,20 @@ Switch: es un componente que nos va a servir para presentar solo una ruta de var
 
 Link: evita que recargue la pagina completa, toma el lugar del elemento <a>
 
+El ciclo de un componente
+
+Montaje: representa el momento donde se inserta el codigo del componente  de el DOM se llama en 3 metodos
+Constructor, render, componentDidMout
+
+
+Actualizacion: ocurre cuando los prorps o el esta do del componente cambia se llama en 2 metodos 
+render, componentDidUpdate
+
+desmontaje: Nos da la oportunidad de hacer limpieza de nuestro componente se llama en 1 metodos
+componenrWillUnmount
+
+llamada a una api: consta de 3 estados
+Loading: cuando la peticion se envia
+Regresa el resultado y puede regresar dos cosas: Error o datos
+
 
