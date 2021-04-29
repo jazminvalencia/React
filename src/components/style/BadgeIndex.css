@@ -1,0 +1,23 @@
+.BadgeIndex__container{
+    height: 93.9vh;
+    background: url(http://localhost:3000/static/media/stars.1d17360a.svg), #1b1b25;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.BadgeIndex__container-img{
+  display: flex;
+  margin: 20%;
+  margin: 20% 0 20% 20%;
+}
+
+.BadgeIndex-img{ 
+}
+
+.Badge__btn{
+    display: grid;
+    width: 10%;
+    margin: auto auto auto 2%;
+}
