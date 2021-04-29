@@ -7,17 +7,11 @@ class BadgeForm extends React.Component {
       console.log("buton click");
     };
 
-    handleSubmit = e =>{
-        e.preventDefault();
-        console.log("form was submit");
-        console.log(this.state);
-    };
-
     render(){
         return(
             <div>
                 <h1>New attendant</h1>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.props.onSubmit}>
                     <div className="form-group">
                         <label>first Name</label>
                         <input onChange={this.props.onChange}
@@ -57,7 +51,7 @@ class BadgeForm extends React.Component {
                         className="form-control" 
                         type="text" 
                         name="socialMedia"
-                        value={this.props.formValues.socialMedia}></input>
+                        value={this.props.formValues.twitter}></input>
                     </div>
                     <button onClick={this.handleClick} className="btn btn-primary">Save</button>
                 </form>
