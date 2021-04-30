@@ -1,17 +1,17 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
 import badgeHeade from '../images/platziconf-logo.svg'
 import '../components/style/BadgeDetails.css'
 import Badge from '../components/Badge'
 
 import PageLoading from '../components/PageLoading';
 import api from '../api'
+import DeleteBadgeModal from '../components/DeleteBadgeModal'
 
 
 function BadgeDetails (props) {
     const badge = props.badge
-    
+
     return (
         <div>
                 <div className="BadgeDetails__hero">
@@ -43,7 +43,12 @@ function BadgeDetails (props) {
                                     <Link className='btn btn-primary mb-4' to={`/bages/${badge.id}/edit`}>Edit</Link>
                                 </div>
                                 <div>
-                                    <button className='btn btn-danger'>delete</button>
+                                    <button onClick={props.onOpenModal} className='btn btn-danger'>delete</button>
+                                    <DeleteBadgeModal 
+                                    isOpen={true} 
+                                    isOpen={props.modalIsOpen} 
+                                    onClose={props.onCloseModal}
+                                    onDeleteBadge={props.onDeleteBadge}/>
                                 </div>
                             </div>
                         </div> 
