@@ -39,4 +39,11 @@ llamada a una api: consta de 3 estados
 Loading: cuando la peticion se envia
 Regresa el resultado y puede regresar dos cosas: Error o datos
 
+Hooks
+permite que las funciones tambien tengan fitches, permite a los componentes funcionales tener caracteristicas que solo las
+clases tiene
+
+Custom Hooks
+usamos los kooks fundamentales para crear custum. Estos hooks iran en su propia funcion y su nombre comenzara con la 
+palabra 'USE'
 

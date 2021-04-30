@@ -8,10 +8,18 @@ import PageLoading from '../components/PageLoading';
 import api from '../api'
 import DeleteBadgeModal from '../components/DeleteBadgeModal'
 
+function useIncreaseCount(max){
+    const [count, setCount] = React.useState(0)
+    
+    if(count > max){
+        setCount(0)
+    }
+    return [count, setCount]
+}
 
 function BadgeDetails (props) {
+    const [count, setCount] = useIncreaseCount(4);
     const badge = props.badge
-
     return (
         <div>
                 <div className="BadgeDetails__hero">
@@ -40,6 +48,11 @@ function BadgeDetails (props) {
                             <h2>Actions</h2>
                             <div>
                                 <div>
+                                    <button onClick={()=> {
+                                        setCount(count + 1);
+                                    }} className='btn btn-primary mb-4'>
+                                        increase Count: {count}
+                                    </button>
                                     <Link className='btn btn-primary mb-4' to={`/bages/${badge.id}/edit`}>Edit</Link>
                                 </div>
                                 <div>
